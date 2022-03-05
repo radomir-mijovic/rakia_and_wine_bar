@@ -13,10 +13,6 @@ export const RakiaAndWineStyled = styled.section`
     position: relative;
   }
 
-  .card {
-    background: aqua;
-  }
-
   .card-1 {
     grid-column: 1/3;
     grid-row: 1/3;
@@ -93,8 +89,6 @@ export const RakiaAndWineStyled = styled.section`
   }
 
   .card-9 {
-    //display: flex;
-    //align-items: center;
      font-size: clamp(1.6rem, 2vw, 4rem);
   }
 
