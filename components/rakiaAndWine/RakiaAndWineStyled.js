@@ -56,7 +56,7 @@ export const RakiaAndWineStyled = styled.section`
     }
   }
 
-  .card-4 {
+  .card-4, .card-9 {
     background: #B28C67;
     font-size: clamp(3rem, 4vw, 5rem);
     text-align: center;
@@ -93,18 +93,9 @@ export const RakiaAndWineStyled = styled.section`
   }
 
   .card-9 {
-    background: #FFFF;
-    display: flex;
-    align-items: center;
-    padding: clamp(1rem, 2vw, 2rem);
-
-    > header {
-      font-size: clamp(3rem, 4vw, 4rem);
-      color: #B28C67;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      font-family: 'Atma', cursive;
-    }
+    //display: flex;
+    //align-items: center;
+     font-size: clamp(1.6rem, 2vw, 4rem);
   }
 
 

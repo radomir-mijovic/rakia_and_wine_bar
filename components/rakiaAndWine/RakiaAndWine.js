@@ -50,12 +50,13 @@ const RakiaAndWine = () => {
                     dolore
                 </p>
             </div>
-            <div className="card card-6">
+            <div className="card card-9">
                 <Image
                     layout='fill'
-                    objectFit='cover'
-                    src='/assets/images/dunja1.jpg'
+                    objectFit='fill'
+                    src='/assets/icons/shot.svg'
                     alt='lipovac vina'/>
+                <div>Get Aperitif and start something great</div>
             </div>
             <div className="card card-7">
                 <Image
@@ -72,9 +73,11 @@ const RakiaAndWine = () => {
                     alt='lipovac vina'/>
             </div>
             <div className="card card-9">
-                <header>
-                    Get Aperitif and start something great
-                </header>
+                <Image
+                    layout='fill'
+                    objectFit='cover'
+                    src='/assets/images/savka2.jpg'
+                    alt='lipovac vina'/>
             </div>
         </RakiaAndWineStyled>
     );
