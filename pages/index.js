@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Banner from "../components/banner/Banner";
 import RakiaAndWine from "../components/rakiaAndWine/RakiaAndWine";
+import LetsHaveDrink from "../components/letsHaveDrink/LetsHaveDrink";
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
             <main>
                 <Banner/>
                 <RakiaAndWine/>
+                <LetsHaveDrink/>
             </main>
         </>
     )

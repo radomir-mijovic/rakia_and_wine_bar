@@ -15,7 +15,7 @@ export const GlobalStyles = createGlobalStyle`
     width: 100%;
     height: 100%;
     -webkit-tap-highlight-color: transparent;
-    //font-family: 'Oswald', sans-serif;
-    font-family: 'Open Sans', cursive;
+    font-family: 'Oswald', sans-serif;
+    //font-family: 'Open Sans', cursive;
   }
 `
