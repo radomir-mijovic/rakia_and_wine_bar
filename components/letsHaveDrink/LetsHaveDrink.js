@@ -18,6 +18,7 @@ const LetsHaveDrink = () => {
                     const {imageSrc, alt, text} = item;
                     return (
                         <motion.div
+                            whileInView={{scale: 1}}
                             onClick={() => setIsActive(index)}
                             key={index}
                             whileTap={{scale: .95}}

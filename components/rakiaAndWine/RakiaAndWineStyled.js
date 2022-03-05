@@ -85,11 +85,17 @@ export const RakiaAndWineStyled = styled.section`
     > p {
       color: #CCB5AC;
       font-size: clamp(1.6rem, 2vw, 2.2rem);
+      margin-bottom: 1rem;
     }
   }
 
   .card-9 {
      font-size: clamp(1.6rem, 2vw, 4rem);
+  }
+  
+  .black {
+    color: black;
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
   }
 
 
