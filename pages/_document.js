@@ -16,7 +16,8 @@ class MyDocument extends Document {
                         rel="stylesheet"/>
                     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
                           rel="stylesheet"/>
-                    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,700;1,800&display=swap" rel="stylesheet"/>
                     <meta name="keywords" content="rakija i vino, rakia and wine bar"/>
                     <meta name='description' content='rakija i vino, rakia and wine bar'/>
                 </Head>

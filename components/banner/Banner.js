@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="header">
                 <Image
                     src='/assets/logo/rakia-org.svg'
-                    alt='rakia and wine'
+                    alt='rakia and wine bar'
                     objectFit='cover'
                     height={150}
                     width={100}/>
