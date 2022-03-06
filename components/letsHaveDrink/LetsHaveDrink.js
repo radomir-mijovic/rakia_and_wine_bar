@@ -121,6 +121,9 @@ const LetsHaveDrink = () => {
                                         <p className="description">
                                             {description}
                                         </p>
+                                        <p>
+                                            {alc} %VOL
+                                        </p>
                                     </div>
                                 </motion.div>
                             )
@@ -129,7 +132,7 @@ const LetsHaveDrink = () => {
                     :
                     <>
                         {rakia.map((item, index) => {
-                            const {name, description, alt, imageSrc, price} = item;
+                            const {name, description, alt, imageSrc, price, alc} = item;
                             return (
                                 <motion.div
                                     initial={{
@@ -164,6 +167,9 @@ const LetsHaveDrink = () => {
                                         </div>
                                         <p className="description">
                                             {description}
+                                        </p>
+                                        <p>
+                                            {alc}.0 %VOL
                                         </p>
                                     </div>
                                 </motion.div>

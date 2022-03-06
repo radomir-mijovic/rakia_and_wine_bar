@@ -81,7 +81,7 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .image {
     position: relative;
-    height: 100%;
+    height: 90%;
     width: 10rem;
   }
   
@@ -106,7 +106,8 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .description {
     color: black;
-    font-size: 1.4rem;
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    margin-top: .4rem;
   }
   
   
