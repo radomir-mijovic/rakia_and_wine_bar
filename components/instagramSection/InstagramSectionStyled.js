@@ -5,7 +5,6 @@ export const InstagramSectionStyled = styled.section`
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 20rem;
-  margin-bottom: 5rem;
   background: #CCB5AC;
   
   .image {
