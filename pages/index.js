@@ -2,6 +2,7 @@ import Head from "next/head";
 import Banner from "../components/banner/Banner";
 import RakiaAndWine from "../components/rakiaAndWine/RakiaAndWine";
 import LetsHaveDrink from "../components/letsHaveDrink/LetsHaveDrink";
+import InstagramSection from "../components/instagramSection/InstagramSection";
 
 export default function Home() {
     //TODO make street link go to google maps
@@ -14,6 +15,7 @@ export default function Home() {
                 <Banner/>
                 <RakiaAndWine/>
                 <LetsHaveDrink/>
+                <InstagramSection/>
             </main>
         </>
     )
