@@ -18,4 +18,10 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Oswald', sans-serif;
     //font-family: 'Open Sans', cursive;
   }
+  
+  p {
+    color: #CCB5AC;
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    margin-bottom: 1rem;
+  }
 `

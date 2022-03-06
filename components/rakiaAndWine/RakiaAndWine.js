@@ -44,12 +44,12 @@ const RakiaAndWine = () => {
                     Our <br/> Location
                 </header>
                 <p>
-                    Discover a dreamy spot in the heart of old
-                    town Budva and create authentic memories with us.
+                    Discover a dreamy spot in the heart of Old
+                    Town Budva and create authentic memories with us.
                 </p>
-                <div className="black">
+                <a href='#'>
                     str. Njegoseva 18
-                </div>
+                </a>
             </div>
             <div className="card card-9">
                 <Image

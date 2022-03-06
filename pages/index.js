@@ -4,6 +4,7 @@ import RakiaAndWine from "../components/rakiaAndWine/RakiaAndWine";
 import LetsHaveDrink from "../components/letsHaveDrink/LetsHaveDrink";
 
 export default function Home() {
+    //TODO make street link go to google maps
     return (
         <>
             <Head>

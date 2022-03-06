@@ -7,13 +7,17 @@ export const LetsHaveDrinkStyled = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   
   .title {
     font-size: clamp(3rem, 4vw, 5rem);
     text-transform: uppercase;
     font-weight: 500;
-    margin: 8rem 0 7rem;
+    margin: 8rem 0 1.5rem;
+  }
+  
+  .subtitle {
+    margin-bottom: 8rem;
   }
   
   .tabs {
@@ -59,5 +63,57 @@ export const LetsHaveDrinkStyled = styled.section`
     font-weight: 400;
     letter-spacing: .3rem;
     color: #B28C67;
+  }
+  
+  .menu {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 0 clamp(.5rem, 5vw, 30rem);
+    margin-bottom: 5rem;
+  }
+  
+  .item {
+    display: flex;
+  }
+  
+  .image {
+    position: relative;
+    height: 100%;
+    width: 10rem;
+  }
+  
+  .info {
+    width: 100%;
+    padding: 1rem 3rem;
+  }
+  
+  .info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    > header,
+    .price {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: black;
+      margin-bottom: 0;
+    }
+  }
+  
+  .description {
+    color: black;
+    font-size: 1.4rem;
+  }
+  
+  
+  @media (max-width: 760px) {
+    
+    .menu {
+      grid-template-columns: 1fr;
+    }
   }
 `
