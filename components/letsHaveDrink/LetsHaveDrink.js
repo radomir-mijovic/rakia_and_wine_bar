@@ -82,99 +82,103 @@ const LetsHaveDrink = () => {
             </div>
 
             <div className="menu">
-                {isWine ?
-                    <AnimatePresence>
-                        {wines.map((item, index) => {
-                            const {name, description, alt, imageSrc, price, alc} = item;
-                            return (
-                                <motion.div
-                                    initial={{
-                                        y: '40%',
-                                        opacity: 0
-                                    }}
-                                    whileInView={{
-                                        y: 0,
-                                        opacity: 1,
-                                        transition: {duration: .7}
-                                    }}
-                                    viewport={{once: true}}
-                                    key={index}
-                                    className='item'>
-                                    <div className="image">
-                                        <Image
-                                            layout='fill'
-                                            objectFit='cover'
-                                            objectPosition='center'
-                                            src={imageSrc}
-                                            alt={alt}/>
-                                    </div>
-                                    <div className="info">
-                                        <div className="info-header">
-                                            <header>
-                                                {name}
-                                            </header>
-                                            <p className="price">
-                                                {price}0 EUR
+                <AnimatePresence>
+                    {isWine ?
+                        <>
+                        {
+                            wines.map((item, index) => {
+                                const {name, description, alt, imageSrc, price, alc} = item;
+                                return (
+                                    <motion.div
+                                        initial={{
+                                            y: '40%',
+                                            opacity: 0
+                                        }}
+                                        whileInView={{
+                                            y: 0,
+                                            opacity: 1,
+                                            transition: {duration: .7}
+                                        }}
+                                        viewport={{once: true}}
+                                        key={index}
+                                        className='item'>
+                                        <div className="image">
+                                            <Image
+                                                layout='fill'
+                                                objectFit='cover'
+                                                objectPosition='center'
+                                                src={imageSrc}
+                                                alt={alt}/>
+                                        </div>
+                                        <div className="info">
+                                            <div className="info-header">
+                                                <header>
+                                                    {name}
+                                                </header>
+                                                <p className="price">
+                                                    {price}0 EUR
+                                                </p>
+                                            </div>
+                                            <p className="description">
+                                                {description}
+                                            </p>
+                                            <p>
+                                                {alc} %VOL
                                             </p>
                                         </div>
-                                        <p className="description">
-                                            {description}
-                                        </p>
-                                        <p>
-                                            {alc} %VOL
-                                        </p>
-                                    </div>
-                                </motion.div>
-                            )
-                        })}
-                    </AnimatePresence>
-                    :
-                    <>
-                        {rakia.map((item, index) => {
-                            const {name, description, alt, imageSrc, price, alc} = item;
-                            return (
-                                <motion.div
-                                    initial={{
-                                        y: '40%',
-                                        opacity: 0
-                                    }}
-                                    whileInView={{
-                                        y: 0,
-                                        opacity: 1,
-                                        transition: {duration: .7}
-                                    }}
-                                    viewport={{once: true}}
-                                    key={index}
-                                    className='item'>
-                                    <div className="image">
-                                        <Image
-                                            layout='fill'
-                                            objectFit='cover'
-                                            objectPosition='center'
-                                            src={imageSrc}
-                                            alt={alt}/>
-                                    </div>
-                                    <div className="info">
-                                        <div className="info-header">
-                                            <header>
-                                                {name}
-                                            </header>
-                                            <p className="price">
-                                                {price}0 EUR
+                                    </motion.div>
+                                )
+                            })
+                        }
+                        </>
+                        :
+                        <>
+                            {rakia.map((item, index) => {
+                                const {name, description, alt, imageSrc, price, alc} = item;
+                                return (
+                                    <motion.div
+                                        initial={{
+                                            y: '40%',
+                                            opacity: 0
+                                        }}
+                                        whileInView={{
+                                            y: 0,
+                                            opacity: 1,
+                                            transition: {duration: .7}
+                                        }}
+                                        viewport={{once: true}}
+                                        key={index}
+                                        className='item'>
+                                        <div className="image">
+                                            <Image
+                                                layout='fill'
+                                                objectFit='cover'
+                                                objectPosition='center'
+                                                src={imageSrc}
+                                                alt={alt}/>
+                                        </div>
+                                        <div className="info">
+                                            <div className="info-header">
+                                                <header>
+                                                    {name}
+                                                </header>
+                                                <p className="price">
+                                                    {price}0 EUR
+                                                </p>
+                                            </div>
+                                            <p className="description">
+                                                {description}
+                                            </p>
+                                            <p>
+                                                {alc}.0 %VOL
                                             </p>
                                         </div>
-                                        <p className="description">
-                                            {description}
-                                        </p>
-                                        <p>
-                                            {alc}.0 %VOL
-                                        </p>
-                                    </div>
-                                </motion.div>
-                            )
-                        })}
-                    </>
-                }
+                                    </motion.div>
+                                )
+                            })}
+                        </>
+                    }
+                </AnimatePresence>
             </div>
         </LetsHaveDrinkStyled>
     );
