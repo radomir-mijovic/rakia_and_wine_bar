@@ -50,6 +50,6 @@ export const CounterStyled = styled.section`
     font-weight: 700;
     color: #B28C67;
     text-transform: uppercase;
-    font-family: 'Comforter Brush', cursive;
+    font-family: 'Shadows Into Light', cursive;
   }
 `

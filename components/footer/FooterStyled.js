@@ -22,7 +22,7 @@ export const FooterStyled = styled.section`
     height: 3rem;
     width: 10rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
     > a {
       height: 100%;

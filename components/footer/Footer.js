@@ -2,7 +2,7 @@ import React from 'react';
 import {FooterStyled} from "./FooterStyled";
 import Image from "next/image";
 import {motion} from "framer-motion";
-import {contact_helpers} from "./contact_helpers";
+import {contact_helpers, socialLinks} from "./contact_helpers";
 import {useRouter} from "next/router";
 
 const Footer = () => {
@@ -21,36 +21,22 @@ const Footer = () => {
                         alt='logo'/>
                 </div>
                 <div className="links">
-                    <motion.a
-                        whileTap={{scale: .95}}
-                        href="https://www.instagram.com/rakiawine.budva/">
-                        <Image
-                            width={30}
-                            height={30}
-                            objectPosition='center'
-                            src='/assets/icons/instagram.svg'
-                            alt='instagram rakija and wine'/>
-                    </motion.a>
-                    <motion.a
-                        whileTap={{scale: .95}}
-                        href="https://www.instagram.com/rakiawine.budva/">
-                        <Image
-                            width={30}
-                            height={30}
-                            objectPosition='center'
-                            src='/assets/icons/facebook.svg'
-                            alt='facebook rakija and wine'/>
-                    </motion.a>
-                    <motion.a
-                        whileTap={{scale: .95}}
-                        href="https://www.instagram.com/rakiawine.budva/">
-                        <Image
-                            width={30}
-                            height={30}
-                            objectPosition='center'
-                            src='/assets/icons/twitter.svg'
-                            alt='twitter rakija and wine'/>
-                    </motion.a>
+                    {socialLinks.map((item, index) => {
+                        const {href, src, alt} = item;
+                        return (
+                            <motion.a
+                                key={index}
+                                whileTap={{scale: .95}}
+                                href={href}>
+                                <Image
+                                    width={30}
+                                    height={30}
+                                    objectPosition='center'
+                                    src={src}
+                                    alt={alt}/>
+                            </motion.a>
+                        )
+                    })}
                 </div>
             </div>
             <div className="contact">

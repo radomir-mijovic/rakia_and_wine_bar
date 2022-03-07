@@ -105,7 +105,6 @@ const LetsHaveDrink = () => {
                                             layout='fill'
                                             objectFit='cover'
                                             objectPosition='center'
-                                            quality={100}
                                             src={imageSrc}
                                             alt={alt}/>
                                     </div>
@@ -152,7 +151,6 @@ const LetsHaveDrink = () => {
                                             layout='fill'
                                             objectFit='cover'
                                             objectPosition='center'
-                                            quality={100}
                                             src={imageSrc}
                                             alt={alt}/>
                                     </div>

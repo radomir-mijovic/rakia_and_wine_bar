@@ -42,7 +42,7 @@ const Counter = () => {
                         <CountUp
                             start={430}
                             end={500}
-                            duration={3}
+                            duration={4}
                             useEasing={true}/>
                         } +
                     </div>
@@ -108,7 +108,7 @@ const Counter = () => {
                         <CountUp
                             start={100}
                             end={150}
-                            duration={3}
+                            duration={4}
                             useEasing={true}/>
                         } +
                     </div>
@@ -141,7 +141,7 @@ const Counter = () => {
                         <CountUp
                             start={430}
                             end={500}
-                            duration={3}
+                            duration={5}
                             useEasing={true}/>
                         } +
                     </div>

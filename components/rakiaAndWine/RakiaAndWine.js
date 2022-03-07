@@ -49,7 +49,7 @@ const RakiaAndWine = () => {
                     Town Budva and create authentic memories with us.
                 </p>
                 <motion.a href='https://www.google.com/maps/place/Rakija+and+Wine+bar/@42.27811,18.8372114,15z/data=!4m2!3m1!1s0x0:0xb70f48e00c98c330?sa=X&ved=2ahUKEwibuLS60LT2AhWHP-wKHWauB3kQ_BJ6BAgpEAU'>
-                    str. Njegoseva 18
+                    str. Njegoseva 16
                 </motion.a>
             </div>
             <div className="card card-9">
