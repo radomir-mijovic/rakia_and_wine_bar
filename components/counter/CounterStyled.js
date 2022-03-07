@@ -6,12 +6,13 @@ export const CounterStyled = styled.section`
   align-items: center;
   justify-content: space-around;
   background: #EEEBE1;
-  padding: 3rem 0;
+  padding: 4rem 0;
   
   .header {
     font-size: clamp(3rem, 4vw, 5rem);
     text-transform: uppercase;
     font-weight: 500;
+    margin-bottom: 3.4rem;
   }
   
   .counters {

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const OpeningHoursStyled = styled.section`
   background: #151412;
   height: auto;
-  padding: 2rem clamp(3rem, 4vw, 8rem);
+  padding: 3.5rem clamp(3rem, 4vw, 8rem);
   //overflow: hidden;
   
   .title {
