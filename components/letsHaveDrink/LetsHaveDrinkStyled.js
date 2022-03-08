@@ -112,6 +112,31 @@ export const LetsHaveDrinkStyled = styled.section`
     margin-top: .4rem;
   }
   
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    > p {
+      margin: 0;
+    }
+  }
+  
+  .image-price {
+    position: relative;
+    width: 8.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .black {
+    color: black;
+    font-size: clamp(1.6rem, 2vw, 1.8rem);
+    margin: 0;
+  }
+  
   
   @media (max-width: 760px) {
     
