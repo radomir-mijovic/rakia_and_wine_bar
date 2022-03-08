@@ -83,6 +83,8 @@ export const LetsHaveDrinkStyled = styled.section`
     position: relative;
     height: 90%;
     width: 10rem;
+    display: flex;
+    align-items: center;
   }
   
   .info {

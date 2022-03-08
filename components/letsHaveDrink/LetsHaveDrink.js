@@ -90,7 +90,9 @@ const LetsHaveDrink = () => {
                                         className='item'>
                                         <div className="image">
                                             <Image
-                                                layout='fill'
+                                                width={200}
+                                                height={400}
+                                                // layout='fill'
                                                 objectFit='cover'
                                                 src={imageSrc}
                                                 alt={alt}/>
@@ -136,9 +138,9 @@ const LetsHaveDrink = () => {
                                         className='item'>
                                         <div className="image">
                                             <Image
-                                                width={100}
-                                                height={150}
-                                                layout='responsive'
+                                                width={200}
+                                                height={450}
+                                                // layout='fixed'
                                                 objectFit='cover'
                                                 src={imageSrc}
                                                 alt={alt}/>
