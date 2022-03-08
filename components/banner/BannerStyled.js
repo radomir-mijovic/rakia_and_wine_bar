@@ -19,8 +19,9 @@ export const BannerStyled = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     z-index: 2;
+    padding: 8rem 0;
 
     > h1 {
       font-size: clamp(5.6rem, 8vw, 11rem);

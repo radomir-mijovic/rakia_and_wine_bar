@@ -5,7 +5,6 @@ import Image from "next/image";
 const Banner = () => {
     return (
         <BannerStyled>
-
             <Image
                 src='/assets/images/bar.jpg'
                 // height={300}
@@ -17,10 +16,10 @@ const Banner = () => {
                 alt='rakia and wine bar'/>
             <div className="header">
                 <Image
-                    src='/assets/logo/rakia-org.svg'
+                    src='/assets/logo/rakia-no-words.svg'
                     alt='rakia and wine bar'
                     objectFit='cover'
-                    height={150}
+                    height={350}
                     width={100}/>
                 <h1>Rakia and Wine bar</h1>
                 <div className="header-text">

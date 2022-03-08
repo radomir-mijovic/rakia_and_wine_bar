@@ -6,16 +6,17 @@ import {tabs_and_drinks, wines, rakia} from "./tabs_and_dinks";
 
 const LetsHaveDrink = () => {
     const [isActive, setIsActive] = useState(0)
-    const [isWine, setIsWine] = useState(true)
+    const [forMapping, setForMapping] = useState(wines)
 
     function menuHandler(index, alt) {
         setIsActive(index)
         if (alt === 'wine') {
-            setIsWine(true)
-        } else {
-            setIsWine(false)
+            setForMapping(wines)
+        } else if (alt === 'rakia') {
+            setForMapping(rakia)
         }
     }
+
 
     return (
         <LetsHaveDrinkStyled isActive={isActive}>
@@ -51,7 +52,7 @@ const LetsHaveDrink = () => {
                             viewport={{once: true}}
                             onClick={() => menuHandler(index, alt)}
                             key={index}
-                            whileTap={{scale: .95}}
+                            whileTap={{scale: .9}}
                             className={isActive === index ? 'tab active' : 'tab'}>
                             <div className="icon">
                                 <Image
@@ -68,78 +69,7 @@ const LetsHaveDrink = () => {
             </div>
 
             <div className="menu">
-                {isWine ?
-                    <AnimatePresence>
-                        {
-                            wines.map((item, index) => {
-                                const {
-                                    name,
-                                    description,
-                                    alt,
-                                    imageSrc,
-                                    price,
-                                    glass_price,
-                                    alc} = item;
-                                return (
-                                    <motion.div
-                                        initial={{
-                                            y: '40%',
-                                            opacity: 0
-                                        }}
-                                        whileInView={{
-                                            y: 0,
-                                            opacity: 1,
-                                            transition: {duration: .7}
-                                        }}
-                                        viewport={{once: true}}
-                                        key={index}
-                                        className='item'>
-                                        <div className="image">
-                                            <Image
-                                                width={200}
-                                                height={400}
-                                                // layout='fill'
-                                                objectFit='cover'
-                                                src={imageSrc}
-                                                alt={alt}/>
-                                        </div>
-                                        <div className="info">
-                                            <div className="info-header">
-                                                <header>
-                                                    {name}
-                                                </header>
-                                                <p className="price">
-                                                    {price.toFixed(2)} EUR
-                                                </p>
-                                            </div>
-                                            <p className="description">
-                                                {description}
-                                            </p>
-                                            <div className="bottom">
-                                                <p>
-                                                    {alc} %VOL
-                                                </p>
-                                                <p className='image-price'>
-                                                    <Image
-                                                        width={18}
-                                                        height={20}
-                                                        objectFit='cover'
-                                                        src='/assets/icons/wine-glass.svg'
-                                                        alt='wine glass'/>
-                                                    <p className="black">
-                                                        {glass_price.toFixed(2)} EUR
-                                                    </p>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </motion.div>
-                                )
-                            })
-                        }
-                    </AnimatePresence>
-                    :
-                    <>
-                        {rakia.map((item, index) => {
+                    {forMapping.map((item, index) => {
                             const {
                                 name,
                                 description,
@@ -147,7 +77,8 @@ const LetsHaveDrink = () => {
                                 imageSrc,
                                 price,
                                 glass_price,
-                                alc} = item;
+                                alc
+                            } = item;
                             return (
                                 <motion.div
                                     initial={{
@@ -157,16 +88,22 @@ const LetsHaveDrink = () => {
                                     whileInView={{
                                         y: 0,
                                         opacity: 1,
-                                        transition: {duration: .7}
+                                        transition: {
+                                            duration: .7
+                                        }
                                     }}
-                                    viewport={{once: true}}
+                                    exit={{y: '100'}}
+                                    // animate={{y: 0, opacity: 1,
+                                    //     transition: {
+                                    //         duration: .7
+                                    //     }}}
+                                    // viewport={{once: true}}
                                     key={index}
                                     className='item'>
                                     <div className="image">
                                         <Image
                                             width={200}
-                                            height={450}
-                                            // layout='fixed'
+                                            height={400}
                                             objectFit='cover'
                                             src={imageSrc}
                                             alt={alt}/>
@@ -202,9 +139,8 @@ const LetsHaveDrink = () => {
                                     </div>
                                 </motion.div>
                             )
-                        })}
-                    </>
-                }
+                        })
+                    }
             </div>
         </LetsHaveDrinkStyled>
     );
