@@ -17,20 +17,6 @@ const LetsHaveDrink = () => {
         }
     }
 
-    const variants = {
-        visible: i => ({
-            y: 0,
-            transition: {
-                // delay: i * .3,
-                duration: i * .7
-            }
-        }),
-        hidden: {
-            y: '40%'
-        }
-
-    }
-
     return (
         <LetsHaveDrinkStyled isActive={isActive}>
             <header className='title'>
@@ -106,7 +92,6 @@ const LetsHaveDrink = () => {
                                             <Image
                                                 layout='fill'
                                                 objectFit='cover'
-                                                objectPosition='center'
                                                 src={imageSrc}
                                                 alt={alt}/>
                                         </div>
@@ -151,9 +136,10 @@ const LetsHaveDrink = () => {
                                         className='item'>
                                         <div className="image">
                                             <Image
-                                                layout='fill'
+                                                width={100}
+                                                height={150}
+                                                layout='responsive'
                                                 objectFit='cover'
-                                                objectPosition='center'
                                                 src={imageSrc}
                                                 alt={alt}/>
                                         </div>
