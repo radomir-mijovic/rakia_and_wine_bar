@@ -68,9 +68,8 @@ const LetsHaveDrink = () => {
             </div>
 
             <div className="menu">
-                <AnimatePresence>
                     {isWine ?
-                        <>
+                        <AnimatePresence>
                         {
                             wines.map((item, index) => {
                                 const {name, description, alt, imageSrc, price, alc} = item;
@@ -117,7 +116,7 @@ const LetsHaveDrink = () => {
                                 )
                             })
                         }
-                        </>
+                        </AnimatePresence>
                         :
                         <>
                             {rakia.map((item, index) => {
@@ -166,7 +165,6 @@ const LetsHaveDrink = () => {
                             })}
                         </>
                     }
-                </AnimatePresence>
             </div>
         </LetsHaveDrinkStyled>
     );

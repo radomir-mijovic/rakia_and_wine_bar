@@ -35,8 +35,8 @@ const Counter = () => {
                     <Image
                         width={50}
                         height={80}
-                        src={'/assets/icons/shot.svg'}
-                        alt={'rakia rakija'}/>
+                        src='/assets/icons/shot.svg'
+                        alt='rakia rakija'/>
                     <div className="number">
                         {isVisibleRakia &&
                         <CountUp
@@ -68,13 +68,13 @@ const Counter = () => {
                     <Image
                         width={50}
                         height={80}
-                        src={'/assets/icons/smiley.svg'}
-                        alt={'smiling customers'}/>
+                        src='/assets/icons/smiley.svg'
+                        alt='smiling customers'/>
                     <div className="number">
                         {isVisiblePeople &&
                         <CountUp
-                            start={300}
-                            end={350}
+                            start={200}
+                            end={250}
                             duration={3}
                             useEasing={true}/>
                         } +
@@ -101,7 +101,7 @@ const Counter = () => {
                     <Image
                         width={50}
                         height={80}
-                        src={'/assets/icons/wine.svg'}
+                        src='/assets/icons/wine.svg'
                         alt='wine bottles'/>
                     <div className="number">
                         {isVisibleWine &&
@@ -134,19 +134,19 @@ const Counter = () => {
                     <Image
                         width={50}
                         height={80}
-                        src={'/assets/icons/shot.svg'}
-                        alt={'rakia rakija'}/>
+                        src='/assets/icons/pizza.svg'
+                        alt='pizza pica'/>
                     <div className="number">
                         {isVisibleShop &&
                         <CountUp
-                            start={430}
-                            end={500}
+                            start={300}
+                            end={350}
                             duration={5}
                             useEasing={true}/>
                         } +
                     </div>
                     <h4 className='title'>
-                        Rakia shots
+                        slices of pizza
                     </h4>
                 </motion.div>
             </div>

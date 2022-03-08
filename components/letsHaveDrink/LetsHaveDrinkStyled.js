@@ -81,7 +81,7 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .image {
     position: relative;
-    height: 90%;
+    height: 100%;
     width: 10rem;
     display: flex;
     align-items: center;
