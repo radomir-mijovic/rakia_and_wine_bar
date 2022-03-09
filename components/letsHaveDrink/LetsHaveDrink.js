@@ -77,6 +77,7 @@ const LetsHaveDrink = () => {
                                 imageSrc,
                                 price,
                                 glass_price,
+                                iconSrc,
                                 alc
                             } = item;
                             return (
@@ -97,7 +98,7 @@ const LetsHaveDrink = () => {
                                     //     transition: {
                                     //         duration: .7
                                     //     }}}
-                                    // viewport={{once: true}}
+                                    viewport={{once: true}}
                                     key={index}
                                     className='item'>
                                     <div className="image">
@@ -129,7 +130,7 @@ const LetsHaveDrink = () => {
                                                     width={18}
                                                     height={20}
                                                     objectFit='cover'
-                                                    src='/assets/icons/wine-glass.svg'
+                                                    src={iconSrc}
                                                     alt='wine glass'/>
                                                 <p className="black">
                                                     {glass_price.toFixed(2)} EUR

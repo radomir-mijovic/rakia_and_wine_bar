@@ -21,8 +21,10 @@ class MyDocument extends Document {
 
                     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
 
-                    <meta name="keywords" content="rakija i vino, rakia and wine bar"/>
-                    <meta name='description' content='rakija i vino bar, rakia and wine bar'/>
+                    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"/>
+
+                    <meta name="keywords" content="rakija i vino budva, rakia and wine bar budva"/>
+                    <meta name='description' content='rakija i vino bar u srcu Starog Grada, Budva, rakia and wine bar in the heart of Old Town, Budva'/>
                 </Head>
                 <body>
                 <Main/>

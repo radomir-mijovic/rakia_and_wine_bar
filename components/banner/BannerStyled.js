@@ -21,18 +21,19 @@ export const BannerStyled = styled.section`
     align-items: center;
     justify-content: space-around;
     z-index: 2;
-    padding: 8rem 0;
+    padding: 4rem 0;
 
     > h1 {
-      font-size: clamp(5.6rem, 8vw, 11rem);
-      font-family: 'Comforter Brush', cursive;
+      font-size: clamp(5.4rem, 9vw, 11rem);
+      //font-family: 'Comforter Brush', cursive;
+      font-family: 'Tangerine', cursive;
       color: #B28C67;
     }
   }
 
   .header-text {
     color: #FFFF;
-    font-size: clamp(3rem, 7vw, 4rem);
+    font-size: clamp(2.4rem, 5vw, 3rem);
     text-align: center;
   }
 
