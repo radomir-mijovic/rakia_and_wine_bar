@@ -21,7 +21,7 @@ const Banner = () => {
                     objectFit='cover'
                     height={350}
                     width={100}/>
-                <h1>Rakia and Wine bar</h1>
+                <h1>Rakia & Wine bar</h1>
                 <div className="header-text">
                     {/* eslint-disable-next-line react/no-unescaped-entities */}
                     WHERE THERE'S FUN <br/>

@@ -1,12 +1,14 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {LetsHaveDrinkStyled} from "./LetsHaveDrinkStyled";
 import Image from "next/image";
-import {motion, AnimatePresence} from "framer-motion";
+import {motion, AnimatePresence, useAnimation} from "framer-motion";
 import {tabs_and_drinks, wines, rakia} from "./tabs_and_dinks";
 
 const LetsHaveDrink = () => {
     const [isActive, setIsActive] = useState(0)
     const [forMapping, setForMapping] = useState(wines)
+
+    const controls = useAnimation()
 
     function menuHandler(index, alt) {
         setIsActive(index)
@@ -16,6 +18,30 @@ const LetsHaveDrink = () => {
             setForMapping(rakia)
         }
     }
+
+    const variants = {
+        visible: i => ({
+            y: 0,
+            transition: {
+                duration: .7,
+                // delay: i * .2,
+            }
+        }),
+        hidden: {
+            y: '40%'
+        }
+    }
+
+
+    // useEffect(() => {
+    //     controls.start(i => ({
+    //         opacity: 1,
+    //         y: 0,
+    //         transition: {
+    //             duration: .7
+    //         }
+    //     }))
+    // }, [])
 
 
     return (
@@ -69,79 +95,90 @@ const LetsHaveDrink = () => {
             </div>
 
             <div className="menu">
+                <AnimatePresence>
                     {forMapping.map((item, index) => {
-                            const {
-                                name,
-                                description,
-                                alt,
-                                imageSrc,
-                                price,
-                                glass_price,
-                                iconSrc,
-                                alc
-                            } = item;
-                            return (
-                                <motion.div
-                                    initial={{
-                                        y: '40%',
-                                        opacity: 0
-                                    }}
-                                    whileInView={{
-                                        y: 0,
-                                        opacity: 1,
-                                        transition: {
-                                            duration: .7
-                                        }
-                                    }}
-                                    exit={{y: '100'}}
-                                    // animate={{y: 0, opacity: 1,
-                                    //     transition: {
-                                    //         duration: .7
-                                    //     }}}
-                                    viewport={{once: true}}
-                                    key={index}
-                                    className='item'>
-                                    <div className="image">
-                                        <Image
-                                            width={200}
-                                            height={400}
-                                            objectFit='cover'
-                                            src={imageSrc}
-                                            alt={alt}/>
-                                    </div>
-                                    <div className="info">
-                                        <div className="info-header">
-                                            <header>
-                                                {name}
-                                            </header>
-                                            <p className="price">
-                                                {price.toFixed(2)} EUR
-                                            </p>
-                                        </div>
-                                        <p className="description">
-                                            {description}
+                        const {
+                            name,
+                            description,
+                            alt,
+                            imageSrc,
+                            price,
+                            glass_price,
+                            iconSrc,
+                            alc
+                        } = item;
+                        return (
+                            <motion.div
+                                // initial={{
+                                //     y: '40%',
+                                //     opacity: 0
+                                // }}
+                                // whileInView={{
+                                //     y: 0,
+                                //     opacity: 1,
+                                //     transition: {
+                                //         duration: .7
+                                //     }
+                                // }}
+
+                                // exit={{y: '100'}}
+
+                                // animate={{y: 0, opacity: 1,
+                                //     transition: {
+                                //         duration: .7
+                                //     }}}
+                                // viewport={{once: true}}
+
+                                custom={index}
+                                whileInView='visible'
+                                // animate='visible'
+                                initial='hidden'
+                                variants={variants}
+
+
+                                key={index}
+                                className='item'>
+                                <div className="image">
+                                    <Image
+                                        width={200}
+                                        height={400}
+                                        objectFit='cover'
+                                        src={imageSrc}
+                                        alt={alt}/>
+                                </div>
+                                <div className="info">
+                                    <div className="info-header">
+                                        <header>
+                                            {name}
+                                        </header>
+                                        <p className="price">
+                                            {price.toFixed(2)} EUR
                                         </p>
-                                        <div className="bottom">
-                                            <p>
-                                                {alc} %VOL
-                                            </p>
-                                            <p className='image-price'>
-                                                <Image
-                                                    width={18}
-                                                    height={20}
-                                                    objectFit='cover'
-                                                    src={iconSrc}
-                                                    alt='wine glass'/>
-                                                <p className="black">
-                                                    {glass_price.toFixed(2)} EUR
-                                                </p>
+                                    </div>
+                                    <p className="description">
+                                        {description}
+                                    </p>
+                                    <div className="bottom">
+                                        <p>
+                                            {alc} %VOL
+                                        </p>
+                                        <div className='image-price'>
+                                            <Image
+                                                width={18}
+                                                height={20}
+                                                objectFit='cover'
+                                                src={iconSrc}
+                                                alt='wine glass'/>
+                                            <p className="black">
+                                                {glass_price.toFixed(2)} EUR
                                             </p>
                                         </div>
                                     </div>
-                                </motion.div>
-                            )
-                        })
-                    }
+                                </div>
+                            </motion.div>
+                        )
+                    })}
+                </AnimatePresence>
             </div>
         </LetsHaveDrinkStyled>
     );

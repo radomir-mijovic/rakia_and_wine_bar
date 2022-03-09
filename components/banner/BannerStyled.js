@@ -24,9 +24,10 @@ export const BannerStyled = styled.section`
     padding: 4rem 0;
 
     > h1 {
-      font-size: clamp(5.4rem, 9vw, 11rem);
-      //font-family: 'Comforter Brush', cursive;
-      font-family: 'Tangerine', cursive;
+      font-size: clamp(5.7rem, 9vw, 11rem);
+      font-family: 'Charm', cursive;
+      font-weight: 400;
+      //font-family: 'Tangerine', cursive;
       color: #B28C67;
     }
   }
