@@ -6,6 +6,8 @@ import InstagramSection from "../components/instagramSection/InstagramSection";
 import OpeningHours from "../components/openingHours/OpeningHours";
 import Counter from "../components/counter/Counter";
 import Footer from "../components/footer/Footer";
+import styled from "styled-components";
+import React from "react";
 
 export default function Home() {
     //TODO make street link go to google maps
@@ -26,3 +28,4 @@ export default function Home() {
         </>
     )
 }
+

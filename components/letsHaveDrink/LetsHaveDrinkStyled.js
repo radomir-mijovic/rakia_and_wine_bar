@@ -89,7 +89,11 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .info {
     width: 100%;
+    height: 100%;
     padding: 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   
   .info-header {
@@ -119,6 +123,7 @@ export const LetsHaveDrinkStyled = styled.section`
     
     > p {
       margin: 0;
+      font-size: clamp(1.6rem, 2vw, 1.8rem);
     }
   }
   

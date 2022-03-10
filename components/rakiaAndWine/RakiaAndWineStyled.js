@@ -76,7 +76,7 @@ export const RakiaAndWineStyled = styled.section`
     padding: clamp(1rem, 2vw, 2rem);
 
     > header {
-      font-size: clamp(3rem, 4vw, 4rem);
+      font-size: clamp(2.6rem, 3vw, 3.8rem);
       font-weight: 800;
       color: #30271C;
       margin-bottom: 1rem;

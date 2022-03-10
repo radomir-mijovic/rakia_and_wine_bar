@@ -7,11 +7,8 @@ const Banner = () => {
         <BannerStyled>
             <Image
                 src='/assets/images/bar.jpg'
-                // height={300}
-                // width={700}
                 layout='fill'
                 objectFit='cover'
-                // objectPosition='center'
                 quality={100}
                 alt='rakia and wine bar'/>
             <div className="header">
@@ -21,12 +18,12 @@ const Banner = () => {
                     objectFit='cover'
                     height={350}
                     width={100}/>
-                <h1>Rakia & Wine bar</h1>
+                <h1>Discover a dreamy spot
+                    in the heart of Old
+                    Town</h1>
                 <div className="header-text">
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    WHERE THERE'S FUN <br/>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    THERE'S RAKIA AND WINE
+                    RAKIA AND WINE BAR <br/>
+                    BUDVA
                 </div>
             </div>
         </BannerStyled>

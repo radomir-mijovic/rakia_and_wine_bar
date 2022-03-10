@@ -12,8 +12,12 @@ export const CounterStyled = styled.section`
     font-size: clamp(3rem, 4vw, 5rem);
     text-transform: uppercase;
     font-weight: 500;
-    margin-bottom: 3.4rem;
+    margin-bottom: 1rem;
   }
+  
+  .subtitle {
+    margin-bottom: 3.4rem;
+  } 
   
   .counters {
     width: 100%;

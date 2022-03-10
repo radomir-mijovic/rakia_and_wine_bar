@@ -16,6 +16,19 @@ const Counter = () => {
             <header className='header'>
                 Our daily routine
             </header>
+            <motion.p
+                initial={{scale: 0}}
+                whileInView={{
+                    scale: 1,
+                    transition: {
+                        duration: .7
+                    }
+                }}
+                viewport={{once: true}}
+                className='subtitle'>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                Where there's fun there's Rakia and Wine
+            </motion.p>
             <div className="counters">
                 <motion.div
                     initial={{

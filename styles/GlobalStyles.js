@@ -21,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
   
   p {
     color: #CCB5AC;
-    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
     margin-bottom: 1rem;
   }
 `

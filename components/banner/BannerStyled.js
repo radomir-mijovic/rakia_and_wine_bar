@@ -21,21 +21,24 @@ export const BannerStyled = styled.section`
     align-items: center;
     justify-content: space-around;
     z-index: 2;
-    padding: 4rem 0;
+    padding: 4rem clamp(2rem, 4vw, 5rem);
 
     > h1 {
-      font-size: clamp(5rem, 9vw, 11rem);
-      font-family: 'Charm', cursive;
+      font-size: clamp(3rem, 5vw, 5rem);
       font-weight: 400;
       //font-family: 'Tangerine', cursive;
-      color: #B28C67;
+      color: #FFFF;
+      //font-family: 'Charm', cursive;
+      font-family: 'Open Sans', cursive;
+      text-align: center;
     }
   }
 
   .header-text {
-    color: #FFFF;
+    color: #B28C67;
     font-size: clamp(2.4rem, 5vw, 3rem);
     text-align: center;
+    font-family: 'Charm', cursive;
   }
 
 `
