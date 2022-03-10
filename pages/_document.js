@@ -30,11 +30,11 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap"
                           rel="stylesheet"/>
 
-                    <meta name="keywords" content=" rakia and wine bar budva, rakija i vino bar budva"/>
+                    <meta name="keywords" content=" rakia and wine bar budva, rakija i vino bar budva, rakia, wine, budva, bar, rakija, vino, old town, drink, shots"/>
                     <meta name='description'
                           content='Discover a dreamy spot in the heart of Old
-                                   Town Budva and create authentic memories with us. Rakia and Wine bar
-                                   - Budva. Rakija i Vino bar u srcu Starog Grada - Budva.'/>
+                                   Town Budva and create authentic memories with us. Rakija and Wine bar
+                                   - Budva. Rakija i Vino bar - Budva.'/>
                 </Head>
                 <body>
                 <Main/>
