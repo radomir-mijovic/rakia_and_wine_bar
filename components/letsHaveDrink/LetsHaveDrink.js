@@ -1,14 +1,12 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import {LetsHaveDrinkStyled} from "./LetsHaveDrinkStyled";
 import Image from "next/image";
-import {motion, AnimatePresence, useAnimation} from "framer-motion";
+import {motion, AnimatePresence} from "framer-motion";
 import {tabs_and_drinks, wines, rakia} from "./tabs_and_dinks";
 
 const LetsHaveDrink = () => {
     const [isActive, setIsActive] = useState(0)
     const [forMapping, setForMapping] = useState(wines)
-
-    const controls = useAnimation()
 
     function menuHandler(index, alt) {
         setIsActive(index)
@@ -31,17 +29,6 @@ const LetsHaveDrink = () => {
             y: '40%'
         }
     }
-
-
-    // useEffect(() => {
-    //     controls.start(i => ({
-    //         opacity: 1,
-    //         y: 0,
-    //         transition: {
-    //             duration: .7
-    //         }
-    //     }))
-    // }, [])
 
 
     return (
@@ -127,8 +114,7 @@ const LetsHaveDrink = () => {
                                 //     transition: {
                                 //         duration: .7
                                 //     }}}
-                                // viewport={{once: true}}
-
+                                viewport={{once: true}}
                                 custom={index}
                                 whileInView='visible'
                                 // animate='visible'

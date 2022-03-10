@@ -24,7 +24,7 @@ export const BannerStyled = styled.section`
     padding: 4rem 0;
 
     > h1 {
-      font-size: clamp(5.7rem, 9vw, 11rem);
+      font-size: clamp(5rem, 9vw, 11rem);
       font-family: 'Charm', cursive;
       font-weight: 400;
       //font-family: 'Tangerine', cursive;
