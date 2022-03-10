@@ -5,10 +5,10 @@ import React from "react";
 class MyDocument extends Document {
     render() {
         return (
-            <Html lang='sr'>
+            <Html lang='en'>
                 <Head>
                     <link rel="shortcut icon" href="/assets/logo/rakia.svg"/>
-                    <link rel="canonical" href="https://sportimpex.netlify.app/"/>
+                    <link rel="canonical" href="https://www.rakiaandwinebar.com/"/>
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                     <link
@@ -17,16 +17,22 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
                           rel="stylesheet"/>
                     <link href="https://fonts.googleapis.com/css2?family=Atma&display=swap" rel="stylesheet"/>
-                    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,700;1,800&display=swap" rel="stylesheet"/>
+                    <link
+                        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,700;1,800&display=swap"
+                        rel="stylesheet"/>
 
-                    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap"
+                          rel="stylesheet"/>
 
-                    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap"
+                          rel="stylesheet"/>
 
-                    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet"/>
+                    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap"
+                          rel="stylesheet"/>
 
                     <meta name="keywords" content="rakija i vino budva, rakia and wine bar budva"/>
-                    <meta name='description' content='rakija i vino bar u srcu Starog Grada, Budva, rakia and wine bar in the heart of Old Town, Budva'/>
+                    <meta name='description'
+                          content='Rakija i Vino bar u srcu Starog Grada - Budva, Rakia and Wine bar in the heart of Old Town - Budva'/>
                 </Head>
                 <body>
                 <Main/>

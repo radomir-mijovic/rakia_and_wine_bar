@@ -22,6 +22,7 @@ const LetsHaveDrink = () => {
             y: 0,
             transition: {
                 duration: .7,
+                when: "afterChildren"
                 // delay: i * .2,
             }
         }),
@@ -96,31 +97,12 @@ const LetsHaveDrink = () => {
                         } = item;
                         return (
                             <motion.div
-                                // initial={{
-                                //     y: '40%',
-                                //     opacity: 0
-                                // }}
-                                // whileInView={{
-                                //     y: 0,
-                                //     opacity: 1,
-                                //     transition: {
-                                //         duration: .7
-                                //     }
-                                // }}
-
-                                // exit={{y: '100'}}
-
-                                // animate={{y: 0, opacity: 1,
-                                //     transition: {
-                                //         duration: .7
-                                //     }}}
+                                exit={{y: '100'}}
                                 viewport={{once: true}}
                                 custom={index}
                                 whileInView='visible'
-                                // animate='visible'
                                 initial='hidden'
                                 variants={variants}
-
 
                                 key={index}
                                 className='item'>
