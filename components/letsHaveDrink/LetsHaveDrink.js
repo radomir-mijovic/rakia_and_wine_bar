@@ -20,13 +20,14 @@ const LetsHaveDrink = () => {
     const variants = {
         visible: i => ({
             y: 0,
+            opacity: 1,
             transition: {
-                duration: .7,
+                duration: 1,
                 when: "afterChildren"
-                // delay: i * .2,
             }
         }),
         hidden: {
+            opacity: 0,
             y: '40%'
         }
     }
@@ -84,7 +85,7 @@ const LetsHaveDrink = () => {
 
             <div className="menu">
                 <AnimatePresence>
-                    {forMapping.map((item, index) => {
+                    {forMapping.map((item) => {
                         const {
                             id,
                             name,
@@ -98,7 +99,7 @@ const LetsHaveDrink = () => {
                         } = item;
                         return (
                             <motion.div
-                                exit={{y: '100'}}
+                                // exit='exit'
                                 viewport={{once: true}}
                                 custom={id}
                                 whileInView='visible'
