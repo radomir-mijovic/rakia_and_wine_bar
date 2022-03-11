@@ -74,7 +74,7 @@ export const wines = [
         alc: 15.5,
         price: 22.00,
         glass_price: 6.00,
-        imageSrc: '/assets/images/lipovac_tellus.jpg',
+        imageSrc: '/assets/images/lipovac_tellus-.png',
         iconSrc: '/assets/icons/wine-glass.svg',
         alt: 'tellus',
         description: 'Dry red wine with deep ruby color, intensive aroma of cherries, blackberries and forest fruit,' +

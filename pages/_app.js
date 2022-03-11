@@ -1,10 +1,13 @@
 import {GlobalStyles} from "../styles/GlobalStyles";
+import {ModalProvider} from "../context/modal_context";
 
 function MyApp({Component, pageProps}) {
     return (
         <>
             <GlobalStyles/>
-            <Component {...pageProps} />
+            <ModalProvider>
+                <Component {...pageProps} />
+            </ModalProvider>
         </>
     )
 }
