@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {LetsHaveDrinkStyled} from "./LetsHaveDrinkStyled";
 import Image from "next/image";
 import {motion, AnimatePresence} from "framer-motion";
-import {tabs_and_drinks, wines, rakia} from "./tabs_and_dinks";
+import {tabs_and_drinks, wines, rakia, sparkling_wine} from "./tabs_and_dinks";
 
 const LetsHaveDrink = () => {
     const [isActive, setIsActive] = useState(0)
@@ -14,6 +14,8 @@ const LetsHaveDrink = () => {
             setForMapping(wines)
         } else if (alt === 'rakia') {
             setForMapping(rakia)
+        } else if (alt === 'sparkling') {
+            setForMapping(sparkling_wine)
         }
     }
 
@@ -122,7 +124,7 @@ const LetsHaveDrink = () => {
                                             {name}
                                         </header>
                                         <p className="price">
-                                            {price.toFixed(2)} EUR
+                                            {price.toFixed(2)} €
                                         </p>
                                     </div>
                                     <p className="description">

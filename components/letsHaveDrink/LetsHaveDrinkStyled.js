@@ -23,10 +23,10 @@ export const LetsHaveDrinkStyled = styled.section`
   .tabs {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     gap: 1rem;
-    width: clamp(15rem, 80vw, 100rem);
-    margin-bottom: 5rem;
+    width: 100%;
+    margin-bottom: 8rem;
   }
   
   .tab {
@@ -35,9 +35,10 @@ export const LetsHaveDrinkStyled = styled.section`
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
+    //background: red;
   }
   
   .active {
@@ -45,7 +46,7 @@ export const LetsHaveDrinkStyled = styled.section`
       content: "";
       position: absolute;
       bottom: -1rem;
-      width: 50%;
+      width: 60%;
       height: .5rem;
       background: #B28C67;
     }
@@ -59,10 +60,11 @@ export const LetsHaveDrinkStyled = styled.section`
   }
   
   .text {
-    font-size: clamp(3rem, 5vw, 4rem);
+    font-size: clamp(1.8rem, 3.5vw, 4rem);
     font-weight: 400;
     letter-spacing: .3rem;
     color: #B28C67;
+    text-align: center;
   }
   
   .menu {
@@ -70,8 +72,8 @@ export const LetsHaveDrinkStyled = styled.section`
     display: grid;
     align-content: center;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 2rem;
-    padding: 0 clamp(.5rem, 5vw, 30rem);
+    grid-gap: 3rem 2rem;
+    padding: 0 4vw;
     margin-bottom: 5rem;
   }
   
@@ -98,16 +100,21 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .info-header {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: space-between;
     
-    > header,
-    .price {
+    > header {
       font-size: 2rem;
       text-transform: uppercase;
       color: black;
       margin-bottom: 0;
     }
+  }
+  
+  .price {
+    color:  #848B88;
+    font-size: 1.8rem;
   }
   
   .description {
@@ -145,8 +152,27 @@ export const LetsHaveDrinkStyled = styled.section`
   
   @media (max-width: 760px) {
     
+    .tabs {
+      margin-bottom: 5rem;
+    }
+    
     .menu {
       grid-template-columns: 1fr;
+      padding: 0 .7rem;
     }
+    
+    .icon {
+      width: 3rem;
+      height: 4rem;
+      margin-top: -1rem;
+    }
+  }
+  
+  @media (max-width: 415px) {
+    
+    //.info-header {
+    //  flex-direction: column;
+    //  align-items: flex-start;
+    //}
   }
 `
