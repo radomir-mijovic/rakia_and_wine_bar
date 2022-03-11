@@ -23,10 +23,11 @@ export const ImageModalStyled = styled(motion.div)`
     width: 5rem;
     cursor: pointer;
     z-index: 22;
+    transition: all .5s ease;
   }
   
-  @media (min-width: 900px) {
-    
+  .active {
+    transform: rotate(180deg) scale(.8);
   }
   
   @media (max-width: 760px) {
@@ -35,5 +36,4 @@ export const ImageModalStyled = styled(motion.div)`
       right: 4rem;
     }
   }
-  
 `

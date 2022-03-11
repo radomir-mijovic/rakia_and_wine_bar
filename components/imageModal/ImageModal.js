@@ -7,6 +7,7 @@ import {motion} from "framer-motion";
 const ImageModal = () => {
     const {imageSrc, setIsModal} = useModalContext()
     const [isDesktop, setIsDesktop] = useState(false)
+    const [isActive, setIsActive] = useState(false)
 
     useEffect(() => {
         if (window.innerWidth > 900) {
@@ -16,6 +17,11 @@ const ImageModal = () => {
         }
     }, [])
 
+    function closeHandler() {
+        setIsModal(false)
+        setIsActive(true)
+    }
+
     return (
             <ImageModalStyled
                 animate={{scale: 1}}
@@ -23,24 +29,20 @@ const ImageModal = () => {
                 exit={{
                     opacity: 0,
                     transition: {
-                        duration: .8,
+                        duration: .7,
                         delay: .4
                     }
                 }}
                 initial={{scale: 0}}>
-                <motion.div
-                    onClick={() => setIsModal(false)}
-                    whileTap={{
-                        scale: .8,
-                        rotate: 90
-                    }}
-                    className="close">
+                <div
+                    onClick={() => closeHandler()}
+                    className={isActive ? 'close active' : 'close'}>
                     <Image
                         objectFit='cover'
                         layout='fill'
                         alt='close icon'
                         src='/assets/icons/close.svg'/>
-                </motion.div>
+                </div>
                 <div className="image">
                     <Image
                         layout='fill'
