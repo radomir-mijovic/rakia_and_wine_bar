@@ -23,7 +23,6 @@ export const LetsHaveDrinkStyled = styled.section`
   .tabs {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     gap: 1rem;
     width: 100%;
     margin-bottom: 8rem;
@@ -38,7 +37,6 @@ export const LetsHaveDrinkStyled = styled.section`
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    //background: red;
   }
   
   .active {
@@ -60,7 +58,7 @@ export const LetsHaveDrinkStyled = styled.section`
   }
   
   .text {
-    font-size: clamp(1.8rem, 3.5vw, 4rem);
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
     font-weight: 400;
     letter-spacing: .3rem;
     color: #B28C67;
@@ -79,6 +77,7 @@ export const LetsHaveDrinkStyled = styled.section`
   
   .item {
     display: flex;
+    cursor: pointer;
   }
   
   .image {
@@ -165,6 +164,13 @@ export const LetsHaveDrinkStyled = styled.section`
       width: 3rem;
       height: 4rem;
       margin-top: -1rem;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    
+    .tabs {
+      padding: 0 25rem;
     }
   }
   

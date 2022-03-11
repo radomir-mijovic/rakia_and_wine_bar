@@ -3,10 +3,12 @@ import {LetsHaveDrinkStyled} from "./LetsHaveDrinkStyled";
 import Image from "next/image";
 import {motion, AnimatePresence} from "framer-motion";
 import {tabs_and_drinks, wines, rakia, sparkling_wine} from "./tabs_and_dinks";
+import {useModalContext} from "../../context/modal_context";
 
 const LetsHaveDrink = () => {
     const [isActive, setIsActive] = useState(0)
     const [forMapping, setForMapping] = useState(wines)
+    const {modalHandler} = useModalContext()
 
     function menuHandler(index, alt) {
         setIsActive(index)
@@ -101,7 +103,7 @@ const LetsHaveDrink = () => {
                         } = item;
                         return (
                             <motion.div
-                                // exit='exit'
+                                onClick={() => modalHandler(imageSrc)}
                                 viewport={{once: true}}
                                 custom={id}
                                 whileInView='visible'

@@ -5,7 +5,8 @@ const ModalContext = React.createContext()
 
 
 export const ModalProvider = ({children}) => {
-    const [isModal, setIsModal] = useState(true)
+    const [isModal, setIsModal] = useState(false)
+    const [imageSrc, setImageSrc] = useState('')
 
     useEffect(() => {
         if (isModal) {
@@ -16,10 +17,19 @@ export const ModalProvider = ({children}) => {
     }, [isModal])
 
 
+    function modalHandler(imageSrc) {
+
+        setIsModal(true)
+        setImageSrc(imageSrc)
+    }
+
+
     return (
         <ModalContext.Provider value={{
             isModal,
-            setIsModal
+            setIsModal,
+            modalHandler,
+            imageSrc
         }}>
             {children}
         </ModalContext.Provider>

@@ -9,6 +9,7 @@ import Footer from "../components/footer/Footer";
 import React from "react";
 import ImageModal from "../components/imageModal/ImageModal";
 import {useModalContext} from "../context/modal_context";
+import {AnimatePresence} from "framer-motion";
 
 export default function Home() {
     const {isModal} = useModalContext()
@@ -19,7 +20,9 @@ export default function Home() {
             <Head>
                 <title>Rakia and Wine bar - Old Town - Budva</title>
             </Head>
-            {isModal &&  <ImageModal/>}
+            <AnimatePresence>
+                {isModal && <ImageModal/>}
+            </AnimatePresence>
             <main>
                 <Banner/>
                 <RakiaAndWine/>
