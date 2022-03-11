@@ -86,6 +86,7 @@ const LetsHaveDrink = () => {
                 <AnimatePresence>
                     {forMapping.map((item, index) => {
                         const {
+                            id,
                             name,
                             description,
                             alt,
@@ -99,12 +100,12 @@ const LetsHaveDrink = () => {
                             <motion.div
                                 exit={{y: '100'}}
                                 viewport={{once: true}}
-                                custom={index}
+                                custom={id}
                                 whileInView='visible'
                                 initial='hidden'
                                 variants={variants}
 
-                                key={index}
+                                key={id}
                                 className='item'>
                                 <div className="image">
                                     <Image

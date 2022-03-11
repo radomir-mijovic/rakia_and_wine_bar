@@ -16,6 +16,7 @@ export const tabs_and_drinks = [
 
 export const wines = [
     {
+        id: 1,
         name: 'harmonia 0.7L',
         alc: 15.5,
         price: 22.50,
@@ -27,6 +28,7 @@ export const wines = [
             ' structure, highlighted by raspberry and wild strawberry notes.'
     },
     {
+        id: 2,
         name: 'concept 0.7L',
         alc: 15.5,
         price: 22.50,
@@ -37,6 +39,7 @@ export const wines = [
         description: 'Dry red wine with ruby red color, medium structure and notes of ripe fruit that give an amazing juiciness.'
     },
     {
+        id: 3,
         name: 'idea 0.7L',
         alc: 15.5,
         price: 26.00,
@@ -48,6 +51,7 @@ export const wines = [
             ' fresh flower and white peach accents.'
     },
     {
+        id: 4,
         name: 'gea 0.7L',
         alc: 15.5,
         price: 31.00,
@@ -59,6 +63,7 @@ export const wines = [
             ' of incense. Dense in the mouth, with a rounded finish and light tannins.'
     },
     {
+        id: 5,
         name: 'tellus 0.7L',
         alc: 15.5,
         price: 22.00,
@@ -70,6 +75,7 @@ export const wines = [
             ' excellent acid structure and balance of tannins.'
     },
     {
+        id: 6,
         name: 'tammuz 0.7L',
         alc: 15.5,
         price: 31.00,
@@ -81,6 +87,7 @@ export const wines = [
             ' excellent acid structure and balance of tannins.'
     },
     {
+        id: 7,
         name: 'model 0.7L',
         alc: 15.5,
         price: 35.00,
@@ -95,6 +102,7 @@ export const wines = [
 
 export const rakia = [
     {
+        id: 8,
         name: 'šljiva 0.7L',
         alc: 40,
         price: 27.00,
@@ -107,6 +115,7 @@ export const rakia = [
             ' sa velikim potencijalom za dodatno odležavanje. Serija limitirane proizvodnje.'
     },
     {
+        id: 9,
         name: 'viljamovka 0.7L',
         alc: 40,
         price: 27.00,
@@ -119,6 +128,7 @@ export const rakia = [
             ' sa kontrolisanom fermentacijom na niskim temperaturama'
     },
     {
+        id: 10,
         name: 'loza 0.7L',
         alc: 45,
         price: 27.00,
@@ -131,6 +141,7 @@ export const rakia = [
             ' proizvodu daju svežinu i trajnost na ukusu.'
     },
     {
+        id: 11,
         name: 'kajsija 0.7L',
         alc: 40,
         price: 27.00,
@@ -142,6 +153,7 @@ export const rakia = [
             ' Raskošnog mirisa, izrazite punoće i trajnosti čini naša druženja nezaboravnim.'
     },
     {
+        id: 12,
         name: 'dunja 0.7L',
         alc: 40,
         price: 30.00,

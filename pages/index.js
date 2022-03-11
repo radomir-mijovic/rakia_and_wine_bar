@@ -14,7 +14,7 @@ export default function Home() {
     return (
         <>
             <Head>
-                <title>Rakia and Wine bar</title>
+                <title>Rakia and Wine bar - Old Town - Budva</title>
             </Head>
             <main>
                 <Banner/>
