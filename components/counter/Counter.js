@@ -81,7 +81,7 @@ const Counter = () => {
                     <Image
                         width={50}
                         height={80}
-                        src='/assets/icons/smiley.svg'
+                        src='/assets/icons/drunk.svg'
                         alt='smiling customers'/>
                     <div className="number">
                         {isVisiblePeople &&
@@ -93,7 +93,7 @@ const Counter = () => {
                         } +
                     </div>
                     <h4 className='title'>
-                        smiling customers
+                        Tipsy people
                     </h4>
                 </motion.div>
                 <motion.div

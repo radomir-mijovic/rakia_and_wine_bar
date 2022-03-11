@@ -12,9 +12,9 @@ export const counters_helpers = [
     },
     {
         id: 1,
-        src: '/assets/icons/smiley.svg',
+        src: '/assets/icons/drunk.svg',
         alt: 'rakia rakija',
-        title: 'Smiling customers',
+        title: 'Tipsy people',
         start: 300,
         end: 350,
         duration: 4,
