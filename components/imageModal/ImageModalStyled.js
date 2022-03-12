@@ -27,7 +27,7 @@ export const ImageModalStyled = styled(motion.div)`
   }
   
   .active {
-    transform: rotate(180deg) scale(.8);
+    transform: rotate(180deg) scale(.6);
   }
   
   @media (max-width: 760px) {

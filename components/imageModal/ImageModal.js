@@ -2,7 +2,6 @@ import React, {useEffect, useState} from 'react';
 import {ImageModalStyled} from "./ImageModalStyled";
 import Image from "next/image";
 import {useModalContext} from "../../context/modal_context";
-import {motion} from "framer-motion";
 
 const ImageModal = () => {
     const {imageSrc, setIsModal} = useModalContext()
