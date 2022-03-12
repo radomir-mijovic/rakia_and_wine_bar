@@ -17,9 +17,8 @@ export const AboutStyled = styled.section`
   }
 
   > h3 {
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
+    font-size: clamp(1.6rem, 2.3vw, 2rem);
     color: #9D7F63;
     font-weight: 400;
-    //font-family: 'Open Sans', cursive;
   }
 `
