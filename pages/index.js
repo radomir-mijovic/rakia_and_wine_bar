@@ -10,6 +10,7 @@ import React from "react";
 import ImageModal from "../components/imageModal/ImageModal";
 import {useModalContext} from "../context/modal_context";
 import {AnimatePresence} from "framer-motion";
+import About from "../components/about/About";
 
 export default function Home() {
     const {isModal} = useModalContext()
@@ -28,8 +29,9 @@ export default function Home() {
                 <RakiaAndWine/>
                 <LetsHaveDrink/>
                 <InstagramSection/>
-                <OpeningHours/>
                 <Counter/>
+                <OpeningHours/>
+                <About/>
                 <Footer/>
             </main>
         </>

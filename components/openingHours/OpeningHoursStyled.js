@@ -4,7 +4,6 @@ export const OpeningHoursStyled = styled.section`
   background: #151412;
   height: auto;
   padding: 4.5rem clamp(3rem, 4vw, 8rem);
-  //overflow: hidden;
   
   .title {
     font-size: clamp(2rem, 3vw, 3rem);
@@ -24,7 +23,6 @@ export const OpeningHoursStyled = styled.section`
   
   .day {
     display: flex;
-    //align-items: center;
     justify-content: space-between;
     
     > h3,
