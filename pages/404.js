@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Head from "next/head";
 import styled from "styled-components";
 import {motion} from "framer-motion";
 import {useRouter} from "next/router";
@@ -17,25 +18,32 @@ export default function Custom404() {
     }, [])
 
     return (
-        <Styled>
-            <h1>
-                Oops! sorry no drinks here.
-                <br/>
-                <motion.div
-                    onClick={() => router.push('/')}
-                    className='btn-go-back'
-                    initial={{scale: 1}}
-                    whileTap={{scale: .9}}>
-                    Go back to Rakia and Wine bar
-                </motion.div>
-            </h1>
-            <Image
-                layout='fill'
-                objectFit={isMobile ? '' : 'scale-down'}
-                src='/assets/logo/rakia-no-words.svg'
-                alt='Page not found'/>
-        </Styled>
+        <>
+            <Head>
+                <title>
+                    Page not found
+                </title>
+            </Head>
 
+            <Styled>
+                <h1>
+                    Oops! sorry no drinks here.
+                    <br/>
+                    <motion.div
+                        onClick={() => router.push('/')}
+                        className='btn-go-back'
+                        initial={{scale: 1}}
+                        whileTap={{scale: .9}}>
+                        Go back to Rakia and Wine bar
+                    </motion.div>
+                </h1>
+                <Image
+                    layout='fill'
+                    objectFit={isMobile ? '' : 'scale-down'}
+                    src='/assets/logo/rakia-no-words.svg'
+                    alt='Page not found'/>
+            </Styled>
+        </>
     )
 }
 
@@ -43,7 +51,7 @@ export const Styled = styled.div`
   background: #EEEBE1;
   width: 100%;
   height: 100vh;
-  
+
   > h1 {
     width: 100%;
     position: absolute;
@@ -53,7 +61,7 @@ export const Styled = styled.div`
     font-weight: 500;
     z-index: 2;
   }
-  
+
   .btn-go-back {
     font-family: 'Charm', cursive;
     text-decoration: underline;
