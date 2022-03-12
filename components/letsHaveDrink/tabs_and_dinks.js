@@ -65,7 +65,7 @@ export const wines = [
         imageSrc: '/assets/images/lipovac_gea-.png',
         iconSrc: '/assets/icons/wine-glass.svg',
         alt: 'gea',
-        description: 'Dry white wine in amber color, unforgetable fragrance of white flowers and honey with hints' +
+        description: 'Dry white wine in amber color, unforgettable fragrance of white flowers and honey with hints' +
             ' of incense. Dense in the mouth, with a rounded finish and light tannins.'
     },
     {
@@ -196,7 +196,7 @@ export const sparkling_wine = [
         imageSrc: '/assets/images/prosecco_extra_dry-.png',
         iconSrc: '/assets/icons/wine-glass.svg',
         alt: 'prosseco extra dry',
-        description: 'An exceptional Prosecco Superiore made using the very best grapes from the Gregorio Bortolin family vineyards.  This immensly soft sparkling wine has very fine bubbles and a full, beautiful flavour.  It has delightful aromas of Elderflower blossom, apple and pear.'
+        description: 'An exceptional Prosecco Superiore made using the very best grapes from the Gregorio Bortolin family vineyards.  This immensely soft sparkling wine has very fine bubbles and a full, beautiful flavour.  It has delightful aromas of Elderflower blossom, apple and pear.'
     },
     {
         id: 16,
@@ -207,6 +207,6 @@ export const sparkling_wine = [
         imageSrc: '/assets/images/prosseco_rose.png',
         iconSrc: '/assets/icons/wine-glass.svg',
         alt: 'prosseco rose extra brut',
-        description: 'A beautiful and elegant, very dry sparkling Moscato by CaSalina of Valdobbiadane, Northern Italy.   Brutissimo has a beautiful rose petal colour with delicate aromas of strawberry jam, peach and citrus fruits.  Dry, yet a smooth feel on the palate with the fruits really evident.'
+        description: 'A beautiful and elegant, very dry sparkling Moscato by CaSalina of Valdobbiadane, Northern Italy. Brutissimo has a beautiful rose petal colour with delicate aromas of strawberry jam, peach and citrus fruits.  Dry, yet a smooth feel on the palate with the fruits really evident.'
     },
 ]
