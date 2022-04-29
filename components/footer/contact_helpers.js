@@ -8,10 +8,10 @@ export const contact_helpers = [
     },
     {
         title: 'phone',
-        info: '+ 382 (0)67 777 7777',
+        info: '+ 382 (0)69 138 128',
         src: '/assets/icons/phone.svg',
         alt: 'phone icon',
-        href: 'tel:+38267777777'
+        href: 'tel:+38269138128'
     },
     {
         title: 'location',
