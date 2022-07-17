@@ -16,6 +16,7 @@ export const BannerStyled = styled.section`
     width: 100%;
     height: 100%;
     position: absolute;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,9 +27,7 @@ export const BannerStyled = styled.section`
     > h1 {
       font-size: clamp(3rem, 5vw, 5rem);
       font-weight: 400;
-      //font-family: 'Tangerine', cursive;
       color: #FFFF;
-      //font-family: 'Charm', cursive;
       font-family: 'Open Sans', cursive;
       text-align: center;
     }
