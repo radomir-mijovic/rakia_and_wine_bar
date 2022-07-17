@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <BannerStyled>
             <Image
-                src='/assets/images/banner3_.jpg'
+                src='/assets/images/banner.jpg'
                 layout='fill'
                 objectFit='cover'
                 quality={100}
