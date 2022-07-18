@@ -8,6 +8,7 @@ const Banner = () => {
             <Image
                 src='/assets/images/main_banner.jpg'
                 layout='fill'
+                objectPosition='35%'
                 objectFit='cover'
                 quality={100}
                 alt='rakia and wine bar'/>
