@@ -12,11 +12,11 @@ export const tabs_and_drinks = [
         text: 'Rakia'
     }
     ,
-    {
-        imageSrc: '/assets/icons/champagne.svg',
-        alt: 'sparkling',
-        text: 'Sparkling Wine'
-    }
+    //{
+    //    imageSrc: '/assets/icons/champagne.svg',
+    //    alt: 'sparkling',
+    //    text: 'Sparkling Wine'
+    //}
 ]
 
 

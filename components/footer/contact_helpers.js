@@ -4,11 +4,11 @@ export const contact_helpers = [
         info: 'info@rakiaandwinebar.com',
         src: '/assets/icons/email.svg',
         alt: 'email icon',
-        href: "mailto: info@rakiaandwinebar.com"
+        href: "mailto: rakiawinebar@gmail.com"
     },
     {
         title: 'phone',
-        info: '+ 382 (0)69 138 128',
+        info: '+ 382 (0)67 241 048',
         src: '/assets/icons/phone.svg',
         alt: 'phone icon',
         href: 'tel:+38269138128'

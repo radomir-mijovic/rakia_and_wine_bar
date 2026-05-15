@@ -14,7 +14,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -23,7 +23,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -32,7 +32,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -41,7 +41,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -50,7 +50,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -59,7 +59,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
@@ -68,7 +68,7 @@ const OpeningHours = () => {
                     </h3>
                     <div className="line"/>
                     <p>
-                        16:00 - 01:00
+                        10:00 - 01:00
                     </p>
                 </div>
                 <div className="day">
